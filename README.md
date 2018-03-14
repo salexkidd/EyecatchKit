@@ -2,7 +2,9 @@
 
 # You can add the simple notify flash  in your Mac App project. Already You know.
 
-It's :)
+like this FadeIn/out images.
+
+![fadewindow](https://i.stack.imgur.com/gNrNc.png)
 
 # Requirements
 - macOS 10.13.3+
