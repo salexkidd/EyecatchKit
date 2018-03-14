@@ -36,7 +36,7 @@ public class ECEyecatch {
     public static func flash(
         sender: Any,
         image: NSImage,
-        fadeOutInterval: TimeInterval = kDefaultEyecatchFadeoutInterval,
+        fadeoutInterval: TimeInterval = kDefaultEyecatchFadeoutInterval,
         fadeoutDulation: TimeInterval = kDefaultEyecatchFadeoutDulation,
         imageAlphaValue: CGFloat = kDefaultEyecatchImageAlphaValue,
         XAxisPercentage: Float = kDefaultEyecatchXAxisPercentage,
@@ -80,7 +80,7 @@ public class ECEyecatch {
         // Show window and animation.
         window.orderFront(self)
         
-        Timer.scheduledTimer(withTimeInterval: fadeOutInterval, repeats: false) { (Timer) in
+        Timer.scheduledTimer(withTimeInterval: fadeoutInterval, repeats: false) { (Timer) in
             NSAnimationContext.runAnimationGroup({ (context) in
                 context.duration = fadeoutDulation
                 window.animator().alphaValue = 0
