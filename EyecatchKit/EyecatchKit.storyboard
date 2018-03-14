@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="YYW-wV-cg8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="Pln-48-vvb">
+            <objects>
+                <windowController id="YYW-wV-cg8" customClass="EyecatchWindowController" customModule="EyecatchKit" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Qab-v0-Fm1">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="461" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="YYW-wV-cg8" id="lnm-IM-1Kz"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="3Cw-6U-F5K" kind="relationship" relationship="window.shadowedContentViewController" id="DIB-wp-KhJ"/>
+                    </connections>
+                </windowController>
+                <customObject id="T74-7p-u8H" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="64"/>
+        </scene>
+        <!--Eyecatch View Controller-->
+        <scene sceneID="Q4c-TY-CBW">
+            <objects>
+                <viewController id="3Cw-6U-F5K" customClass="EyecatchViewController" customModule="EyecatchKit" sceneMemberID="viewController">
+                    <view key="view" id="Oww-5q-DBP">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HIx-hX-P9k">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0st-CG-qx0"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HIx-hX-P9k" secondAttribute="bottom" id="57j-X7-qIH"/>
+                            <constraint firstItem="HIx-hX-P9k" firstAttribute="top" secondItem="Oww-5q-DBP" secondAttribute="top" id="b5L-TT-QYs"/>
+                            <constraint firstItem="HIx-hX-P9k" firstAttribute="leading" secondItem="Oww-5q-DBP" secondAttribute="leading" id="eYJ-ZR-eDP"/>
+                            <constraint firstAttribute="trailing" secondItem="HIx-hX-P9k" secondAttribute="trailing" id="yRp-DE-sNc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="HIx-hX-P9k" id="T6v-cB-7Bx"/>
+                    </connections>
+                </viewController>
+                <customObject id="CiK-KZ-6iE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="558"/>
+        </scene>
+    </scenes>
+</document>
