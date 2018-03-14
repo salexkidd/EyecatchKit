@@ -52,4 +52,6 @@ and
 
 See [EyecatchKitExample](https://github.com/salexkidd/EyecatchKitExample)
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/_zt2uGXirJ0/0.jpg)](http://www.youtube.com/watch?v=_zt2uGXirJ0)
+
 
